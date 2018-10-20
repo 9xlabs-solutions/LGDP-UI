@@ -421,9 +421,12 @@
                             </div>
                         </div>
                     </div>
-                    <h3>Manage Customers
+
+                    <h3>
+                        Manage Customers
                         <small style="font-size: small"><a href="#">view all</a></small>
                     </h3>
+
                     <br>
                     <div class="row">
                         <div class="col-md-4">
@@ -661,8 +664,10 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/demo/demo.js"></script>
 <script>
-	$(document).ready(function () {
-		$().ready(function () {
+	$(document).ready(function ()
+	{
+		$().ready(function ()
+		{
 			$sidebar = $('.sidebar');
 
 			$sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -673,7 +678,8 @@
 
 			window_width = $(window).width();
 
-			$('.switch-sidebar-image input').change(function () {
+			$('.switch-sidebar-image input').change(function ()
+			{
 				$full_page_background = $('.full-page-background');
 
 				$input = $(this);
@@ -693,7 +699,8 @@
 					}
 
 					background_image = true;
-				} else
+				}
+				else
 				{
 					if ($sidebar_img_container.length != 0)
 					{
@@ -711,7 +718,8 @@
 				}
 			});
 
-			$('.switch-sidebar-mini input').change(function () {
+			$('.switch-sidebar-mini input').change(function ()
+			{
 				$body = $('body');
 
 				$input = $(this);
@@ -723,12 +731,14 @@
 
 					$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
-				} else
+				}
+				else
 				{
 
 					$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-					setTimeout(function () {
+					setTimeout(function ()
+					{
 						$('body').addClass('sidebar-mini');
 
 						md.misc.sidebar_mini_active = true;
@@ -736,12 +746,14 @@
 				}
 
 				// we simulate the window Resize so the charts will get updated in realtime.
-				var simulateWindowResize = setInterval(function () {
+				var simulateWindowResize = setInterval(function ()
+				{
 					window.dispatchEvent(new Event('resize'));
 				}, 180);
 
 				// we stop the simulation of Window Resize after the animations are completed
-				setTimeout(function () {
+				setTimeout(function ()
+				{
 					clearInterval(simulateWindowResize);
 				}, 1000);
 
@@ -751,7 +763,8 @@
 </script>
 
 <script>
-	$(document).ready(function () {
+	$(document).ready(function ()
+	{
 		// Javascript method's body can be found in assets/js/demos.js
 		md.initDashboardPageCharts();
 
