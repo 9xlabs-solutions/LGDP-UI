@@ -232,7 +232,8 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
+
+                    <div class="col-md-6">
                         <div class="card ">
                             <div class="card-header card-header-text card-header-rose">
                                 <div class="card-text">
@@ -247,6 +248,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-6">
+
+                        <div class="card">
+
+                            <div class="card-header card-header-text card-header-rose">
+                                <div class="card-text">
+                                    <h4 class="card-title">Dispatched Trucks</h4>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action">LK-6543</button>
+                                    <button type="button" class="list-group-item list-group-item-action">LM-2543</button>
+                                    <button type="button" class="list-group-item list-group-item-action">LS-1943</button>
+                                    <button type="button" class="list-group-item list-group-item-action">LC-1025</button>
+                                    <button type="button" class="list-group-item list-group-item-action">SM-2510</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
@@ -471,8 +500,10 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/demo/demo.js"></script>
 <script>
-	$(document).ready(function () {
-		$().ready(function () {
+	$(document).ready(function ()
+	{
+		$().ready(function ()
+		{
 			$sidebar = $('.sidebar');
 
 			$sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -494,21 +525,24 @@
 
 			}
 
-			$('.fixed-plugin a').click(function (event) {
+			$('.fixed-plugin a').click(function (event)
+			{
 				// Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
 				if ($(this).hasClass('switch-trigger'))
 				{
 					if (event.stopPropagation)
 					{
 						event.stopPropagation();
-					} else if (window.event)
+					}
+					else if (window.event)
 					{
 						window.event.cancelBubble = true;
 					}
 				}
 			});
 
-			$('.fixed-plugin .active-color span').click(function () {
+			$('.fixed-plugin .active-color span').click(function ()
+			{
 				$full_page_background = $('.full-page-background');
 
 				$(this).siblings().removeClass('active');
@@ -532,7 +566,8 @@
 				}
 			});
 
-			$('.fixed-plugin .background-color .badge').click(function () {
+			$('.fixed-plugin .background-color .badge').click(function ()
+			{
 				$(this).siblings().removeClass('active');
 				$(this).addClass('active');
 
@@ -544,7 +579,8 @@
 				}
 			});
 
-			$('.fixed-plugin .img-holder').click(function () {
+			$('.fixed-plugin .img-holder').click(function ()
+			{
 				$full_page_background = $('.full-page-background');
 
 				$(this).parent('li').siblings().removeClass('active');
@@ -555,7 +591,8 @@
 
 				if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0)
 				{
-					$sidebar_img_container.fadeOut('fast', function () {
+					$sidebar_img_container.fadeOut('fast', function ()
+					{
 						$sidebar_img_container.css('background-image', 'url("' + new_image + '")');
 						$sidebar_img_container.fadeIn('fast');
 					});
@@ -565,7 +602,8 @@
 				{
 					var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-					$full_page_background.fadeOut('fast', function () {
+					$full_page_background.fadeOut('fast', function ()
+					{
 						$full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
 						$full_page_background.fadeIn('fast');
 					});
@@ -586,7 +624,8 @@
 				}
 			});
 
-			$('.switch-sidebar-image input').change(function () {
+			$('.switch-sidebar-image input').change(function ()
+			{
 				$full_page_background = $('.full-page-background');
 
 				$input = $(this);
@@ -606,7 +645,8 @@
 					}
 
 					background_image = true;
-				} else
+				}
+				else
 				{
 					if ($sidebar_img_container.length != 0)
 					{
@@ -624,7 +664,8 @@
 				}
 			});
 
-			$('.switch-sidebar-mini input').change(function () {
+			$('.switch-sidebar-mini input').change(function ()
+			{
 				$body = $('body');
 
 				$input = $(this);
@@ -636,12 +677,14 @@
 
 					$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
-				} else
+				}
+				else
 				{
 
 					$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-					setTimeout(function () {
+					setTimeout(function ()
+					{
 						$('body').addClass('sidebar-mini');
 
 						md.misc.sidebar_mini_active = true;
@@ -649,12 +692,14 @@
 				}
 
 				// we simulate the window Resize so the charts will get updated in realtime.
-				var simulateWindowResize = setInterval(function () {
+				var simulateWindowResize = setInterval(function ()
+				{
 					window.dispatchEvent(new Event('resize'));
 				}, 180);
 
 				// we stop the simulation of Window Resize after the animations are completed
-				setTimeout(function () {
+				setTimeout(function ()
+				{
 					clearInterval(simulateWindowResize);
 				}, 1000);
 
@@ -664,7 +709,8 @@
 </script>
 
 <script>
-	$(document).ready(function () {
+	$(document).ready(function ()
+	{
 		demo.initSmallGoogleMaps();
 	});
 </script>

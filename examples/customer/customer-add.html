@@ -243,6 +243,19 @@
                             </div>
                             <div class="card-body ">
                                 <form method="post" action="/" class="form-horizontal">
+
+                                    <div class="row">
+                                        <label class="col-sm-2 col-form-label">Dealer Type</label>
+                                        <div class="col-sm-10">
+                                            <div class="form-group">
+                                                <select class="form-control" name="type" id="type">
+                                                    <option>Commercial</option>
+                                                    <option>Non Commercial</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="row">
                                         <label class="col-sm-2 col-form-label">Dealer Code</label>
                                         <div class="col-sm-10">
@@ -316,7 +329,8 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <label class="col-sm-2 col-form-label label-checkbox">Tripartite Agreement Signed</label>
+                                        <label class="col-sm-2 col-form-label label-checkbox">Tripartite Agreement
+                                            Signed</label>
                                         <div class="col-sm-10 checkbox-radios">
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
@@ -367,7 +381,8 @@
                                             </div>
                                             <div class="form-check">
                                                 <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value=""> Petrol Shed
+                                                    <input class="form-check-input" type="checkbox" value=""> Petrol
+                                                    Shed
                                                     <span class="form-check-sign">
                       <span class="check"></span>
                     </span>
@@ -464,7 +479,8 @@
                                     </div>
                                     <br>
                                     <div class="row">
-                                        <label class="col-sm-2 col-form-label label-checkbox">Revised Delivery Days</label>
+                                        <label class="col-sm-2 col-form-label label-checkbox">Revised Delivery
+                                            Days</label>
                                         <div class="col-sm-10 checkbox-radios">
                                             <div class="form-check form-check-inline">
                                                 <label class="form-check-label">
@@ -525,25 +541,37 @@
                                         </div>
                                     </div>
                                     <br>
+
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-5">
+                                        <label class="col-sm-2 col-form-label"></label>
+                                        <div class="col-sm-10">
                                             <div class="fileinput fileinput-new text-center" data-provides="fileinput">
                                                 <div class="fileinput-new thumbnail">
                                                     <img src="../../assets/img/image_placeholder.jpg" alt="...">
                                                 </div>
                                                 <div class="fileinput-preview fileinput-exists thumbnail"></div>
                                                 <div>
-                  <span class="btn btn-rose btn-round btn-file">
-                    <span class="fileinput-new">Add Dealer Photo</span>
-                    <span class="fileinput-exists">Change</span>
-                    <input type="file" name="..."/>
-                  </span>
+                                                  <span class="btn btn-rose btn-round btn-file">
+                                                    <span class="fileinput-new">Add Dealer Photo</span>
+                                                    <span class="fileinput-exists">Change</span>
+                                                    <input type="file" name="..."/>
+                                                  </span>
                                                     <a href="#pablo" class="btn btn-danger btn-round fileinput-exists"
                                                        data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="row">
+                                        <label class="col-sm-2 col-form-label"></label>
+                                        <div class="col-sm-10">
+                                            <div class="form-group">
+                                                <button class="btn btn-primary">Add Customer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </form>
                             </div>
                         </div>
@@ -569,7 +597,7 @@
                 <div class="copyright float-right">
                     &copy;
                     <script>
-                        document.write(new Date().getFullYear())
+						document.write(new Date().getFullYear())
                     </script>
                     , Made with <i class="material-icons">favorite</i> by
                     <a href="https://www.9xlabs.com" target="_blank">9XLABS</a>
@@ -653,196 +681,212 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="../../assets/demo/demo.js"></script>
 <script>
-    $(document).ready(function () {
-        $().ready(function () {
-            $sidebar = $('.sidebar');
+	$(document).ready(function ()
+	{
+		$().ready(function ()
+		{
+			$sidebar = $('.sidebar');
 
-            $sidebar_img_container = $sidebar.find('.sidebar-background');
+			$sidebar_img_container = $sidebar.find('.sidebar-background');
 
-            $full_page = $('.full-page');
+			$full_page = $('.full-page');
 
-            $sidebar_responsive = $('body > .navbar-collapse');
+			$sidebar_responsive = $('body > .navbar-collapse');
 
-            window_width = $(window).width();
+			window_width = $(window).width();
 
-            fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+			fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
 
-            if (window_width > 767 && fixed_plugin_open == 'Dashboard')
-            {
-                if ($('.fixed-plugin .dropdown').hasClass('show-dropdown'))
-                {
-                    $('.fixed-plugin .dropdown').addClass('open');
-                }
+			if (window_width > 767 && fixed_plugin_open == 'Dashboard')
+			{
+				if ($('.fixed-plugin .dropdown').hasClass('show-dropdown'))
+				{
+					$('.fixed-plugin .dropdown').addClass('open');
+				}
 
-            }
+			}
 
-            $('.fixed-plugin a').click(function (event) {
-                // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
-                if ($(this).hasClass('switch-trigger'))
-                {
-                    if (event.stopPropagation)
-                    {
-                        event.stopPropagation();
-                    } else if (window.event)
-                    {
-                        window.event.cancelBubble = true;
-                    }
-                }
-            });
+			$('.fixed-plugin a').click(function (event)
+			{
+				// Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+				if ($(this).hasClass('switch-trigger'))
+				{
+					if (event.stopPropagation)
+					{
+						event.stopPropagation();
+					}
+					else if (window.event)
+					{
+						window.event.cancelBubble = true;
+					}
+				}
+			});
 
-            $('.fixed-plugin .active-color span').click(function () {
-                $full_page_background = $('.full-page-background');
+			$('.fixed-plugin .active-color span').click(function ()
+			{
+				$full_page_background = $('.full-page-background');
 
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
+				$(this).siblings().removeClass('active');
+				$(this).addClass('active');
 
-                var new_color = $(this).data('color');
+				var new_color = $(this).data('color');
 
-                if ($sidebar.length != 0)
-                {
-                    $sidebar.attr('data-color', new_color);
-                }
+				if ($sidebar.length != 0)
+				{
+					$sidebar.attr('data-color', new_color);
+				}
 
-                if ($full_page.length != 0)
-                {
-                    $full_page.attr('filter-color', new_color);
-                }
+				if ($full_page.length != 0)
+				{
+					$full_page.attr('filter-color', new_color);
+				}
 
-                if ($sidebar_responsive.length != 0)
-                {
-                    $sidebar_responsive.attr('data-color', new_color);
-                }
-            });
+				if ($sidebar_responsive.length != 0)
+				{
+					$sidebar_responsive.attr('data-color', new_color);
+				}
+			});
 
-            $('.fixed-plugin .background-color .badge').click(function () {
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
+			$('.fixed-plugin .background-color .badge').click(function ()
+			{
+				$(this).siblings().removeClass('active');
+				$(this).addClass('active');
 
-                var new_color = $(this).data('background-color');
+				var new_color = $(this).data('background-color');
 
-                if ($sidebar.length != 0)
-                {
-                    $sidebar.attr('data-background-color', new_color);
-                }
-            });
+				if ($sidebar.length != 0)
+				{
+					$sidebar.attr('data-background-color', new_color);
+				}
+			});
 
-            $('.fixed-plugin .img-holder').click(function () {
-                $full_page_background = $('.full-page-background');
+			$('.fixed-plugin .img-holder').click(function ()
+			{
+				$full_page_background = $('.full-page-background');
 
-                $(this).parent('li').siblings().removeClass('active');
-                $(this).parent('li').addClass('active');
+				$(this).parent('li').siblings().removeClass('active');
+				$(this).parent('li').addClass('active');
 
 
-                var new_image = $(this).find("img").attr('src');
+				var new_image = $(this).find("img").attr('src');
 
-                if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0)
-                {
-                    $sidebar_img_container.fadeOut('fast', function () {
-                        $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-                        $sidebar_img_container.fadeIn('fast');
-                    });
-                }
+				if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0)
+				{
+					$sidebar_img_container.fadeOut('fast', function ()
+					{
+						$sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+						$sidebar_img_container.fadeIn('fast');
+					});
+				}
 
-                if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0)
-                {
-                    var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+				if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0)
+				{
+					var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-                    $full_page_background.fadeOut('fast', function () {
-                        $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-                        $full_page_background.fadeIn('fast');
-                    });
-                }
+					$full_page_background.fadeOut('fast', function ()
+					{
+						$full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+						$full_page_background.fadeIn('fast');
+					});
+				}
 
-                if ($('.switch-sidebar-image input:checked').length == 0)
-                {
-                    var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
-                    var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+				if ($('.switch-sidebar-image input:checked').length == 0)
+				{
+					var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+					var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-                    $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-                    $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-                }
+					$sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+					$full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+				}
 
-                if ($sidebar_responsive.length != 0)
-                {
-                    $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
-                }
-            });
+				if ($sidebar_responsive.length != 0)
+				{
+					$sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+				}
+			});
 
-            $('.switch-sidebar-image input').change(function () {
-                $full_page_background = $('.full-page-background');
+			$('.switch-sidebar-image input').change(function ()
+			{
+				$full_page_background = $('.full-page-background');
 
-                $input = $(this);
+				$input = $(this);
 
-                if ($input.is(':checked'))
-                {
-                    if ($sidebar_img_container.length != 0)
-                    {
-                        $sidebar_img_container.fadeIn('fast');
-                        $sidebar.attr('data-image', '#');
-                    }
+				if ($input.is(':checked'))
+				{
+					if ($sidebar_img_container.length != 0)
+					{
+						$sidebar_img_container.fadeIn('fast');
+						$sidebar.attr('data-image', '#');
+					}
 
-                    if ($full_page_background.length != 0)
-                    {
-                        $full_page_background.fadeIn('fast');
-                        $full_page.attr('data-image', '#');
-                    }
+					if ($full_page_background.length != 0)
+					{
+						$full_page_background.fadeIn('fast');
+						$full_page.attr('data-image', '#');
+					}
 
-                    background_image = true;
-                } else
-                {
-                    if ($sidebar_img_container.length != 0)
-                    {
-                        $sidebar.removeAttr('data-image');
-                        $sidebar_img_container.fadeOut('fast');
-                    }
+					background_image = true;
+				}
+				else
+				{
+					if ($sidebar_img_container.length != 0)
+					{
+						$sidebar.removeAttr('data-image');
+						$sidebar_img_container.fadeOut('fast');
+					}
 
-                    if ($full_page_background.length != 0)
-                    {
-                        $full_page.removeAttr('data-image', '#');
-                        $full_page_background.fadeOut('fast');
-                    }
+					if ($full_page_background.length != 0)
+					{
+						$full_page.removeAttr('data-image', '#');
+						$full_page_background.fadeOut('fast');
+					}
 
-                    background_image = false;
-                }
-            });
+					background_image = false;
+				}
+			});
 
-            $('.switch-sidebar-mini input').change(function () {
-                $body = $('body');
+			$('.switch-sidebar-mini input').change(function ()
+			{
+				$body = $('body');
 
-                $input = $(this);
+				$input = $(this);
 
-                if (md.misc.sidebar_mini_active == true)
-                {
-                    $('body').removeClass('sidebar-mini');
-                    md.misc.sidebar_mini_active = false;
+				if (md.misc.sidebar_mini_active == true)
+				{
+					$('body').removeClass('sidebar-mini');
+					md.misc.sidebar_mini_active = false;
 
-                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+					$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
-                } else
-                {
+				}
+				else
+				{
 
-                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+					$('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-                    setTimeout(function () {
-                        $('body').addClass('sidebar-mini');
+					setTimeout(function ()
+					{
+						$('body').addClass('sidebar-mini');
 
-                        md.misc.sidebar_mini_active = true;
-                    }, 300);
-                }
+						md.misc.sidebar_mini_active = true;
+					}, 300);
+				}
 
-                // we simulate the window Resize so the charts will get updated in realtime.
-                var simulateWindowResize = setInterval(function () {
-                    window.dispatchEvent(new Event('resize'));
-                }, 180);
+				// we simulate the window Resize so the charts will get updated in realtime.
+				var simulateWindowResize = setInterval(function ()
+				{
+					window.dispatchEvent(new Event('resize'));
+				}, 180);
 
-                // we stop the simulation of Window Resize after the animations are completed
-                setTimeout(function () {
-                    clearInterval(simulateWindowResize);
-                }, 1000);
+				// we stop the simulation of Window Resize after the animations are completed
+				setTimeout(function ()
+				{
+					clearInterval(simulateWindowResize);
+				}, 1000);
 
-            });
-        });
-    });
+			});
+		});
+	});
 </script>
 
 </body>
