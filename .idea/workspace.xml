@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f36ecfd-1422-4590-8d56-37574c0a97f3" name="Default Changelist" comment="Added Sales UI">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6f36ecfd-1422-4590-8d56-37574c0a97f3" name="Default Changelist" comment="Modified commercial sales UI">
+      <change beforePath="$PROJECT_DIR$/examples/manage-trucks.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/manage-trucks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/sales/commercial-sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/sales/commercial-sales.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/sales/yard-sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/sales/yard-sales.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,11 +63,38 @@
       <file leaf-file-name="commercial-sales.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/sales/commercial-sales.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="307" column="49" selection-start-line="307" selection-start-column="49" selection-end-line="307" selection-end-column="49" />
+            <state relative-caret-position="-4792">
+              <caret line="459" column="77" selection-end-line="1618" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yard-sales.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/sales/yard-sales.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="266" column="79" selection-start-line="266" selection-start-column="79" selection-end-line="266" selection-end-column="79" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage-trucks.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/manage-trucks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="265" column="35" selection-start-line="265" selection-start-column="35" selection-end-line="265" selection-end-column="35" />
+              <folding>
+                <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#24;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -76,21 +104,6 @@
         <entry file="file://$PROJECT_DIR$/docs/2.0/components/buttons.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2142" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage-trucks.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examples/manage-trucks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding>
-                <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#24;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -175,10 +188,10 @@
         <option value="$PROJECT_DIR$/examples/forms/forms-regular.html" />
         <option value="$PROJECT_DIR$/examples/forms/forms-extended.html" />
         <option value="$PROJECT_DIR$/examples/sales.html" />
-        <option value="$PROJECT_DIR$/examples/manage-trucks.html" />
-        <option value="$PROJECT_DIR$/examples/sales/yard-sales.html" />
         <option value="$PROJECT_DIR$/examples/dashboard.html" />
         <option value="$PROJECT_DIR$/examples/sales/commercial-sales.html" />
+        <option value="$PROJECT_DIR$/examples/sales/yard-sales.html" />
+        <option value="$PROJECT_DIR$/examples/manage-trucks.html" />
       </list>
     </option>
   </component>
@@ -212,54 +225,6 @@
             <path>
               <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="2.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LGDP-UI" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LGDP-UI" type="b2602c69:ProjectViewProjectNode" />
@@ -365,7 +330,7 @@
       <workItem from="1539245063965" duration="169000" />
       <workItem from="1539276256963" duration="10681000" />
       <workItem from="1539670349751" duration="3559000" />
-      <workItem from="1539676862834" duration="19189000" />
+      <workItem from="1539676862834" duration="28478000" />
     </task>
     <task id="LOCAL-00001" summary="Added Sales UI">
       <created>1539752622127</created>
@@ -374,15 +339,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539752622127</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modified commercial sales UI">
+      <created>1540014096776</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540014096776</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34590000" />
+    <option name="totallyTimeSpent" value="43879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -422,7 +393,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Sales UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Sales UI" />
+    <MESSAGE value="Modified commercial sales UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified commercial sales UI" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/demo/demo.js">
@@ -495,13 +467,6 @@
     <entry file="file://$PROJECT_DIR$/examples/components/panels.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5610" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/sales/yard-sales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/forms/forms-regular.html">
@@ -670,10 +635,15 @@
     <entry file="file://$PROJECT_DIR$/assets/img/sidebar-3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/2.0/components/buttons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2142" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/sales/commercial-sales.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="307" column="49" selection-start-line="307" selection-start-column="49" selection-end-line="307" selection-end-column="49" />
+        <state relative-caret-position="-4792">
+          <caret line="459" column="77" selection-end-line="1618" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -681,18 +651,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/2.0/components/buttons.html">
+    <entry file="file://$PROJECT_DIR$/examples/sales/yard-sales.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142" />
+        <state relative-caret-position="169">
+          <caret line="266" column="79" selection-start-line="266" selection-start-column="79" selection-end-line="266" selection-end-column="79" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/manage-trucks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="83">
+          <caret line="265" column="35" selection-start-line="265" selection-start-column="35" selection-end-line="265" selection-end-column="35" />
           <folding>
             <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#24;n#body#0;n#html#0;n#!!top" />
           </folding>
